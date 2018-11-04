@@ -1,0 +1,554 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+/*@font-face {
+  font-family: 'century-gothic';
+  src: url('../fonts/ufonts.com_century-gothic.eot');  IE9 Compat Modes 
+  src: url('../fonts/ufonts.com_century-gothic.eot?#iefix') format('embedded-opentype'),  IE6-IE8 
+       url('../fonts/ufonts.com_century-gothic.woff2') format('woff2'),  Super Modern Browsers 
+       url('../fonts/ufonts.com_century-gothic.woff') format('woff'),  Pretty Modern Browsers 
+       url('../fonts/ufonts.com_century-gothic.ttf')  format('truetype'),  Safari, Android, iOS 
+       url('../fonts/ufonts.com_century-gothic.svg#svgFontName') format('svg');  Legacy iOS 
+}*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0px;
+	padding: 00px;
+	border: 0px none;
+	outline: 0px none;
+	background: none repeat scroll 0% 0% transparent;	
+	text-align:left;
+
+}
+html{ 
+  background:url(../img/bgbody.jpg) no-repeat top center fixed;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background:url(../img/bgbody.jpg) repeat-x;
+  background-color:#309132;*/
+}
+body{
+	font-family:"Arial";
+	font-size:14px;
+}
+
+a{
+	text-decoration:none;
+	color:#fff;
+}
+a:hover{
+	text-decoration:underline;
+	color:#00E326;
+}
+
+a img{
+	border:none;
+}
+ul {
+	list-style-type: none;
+}
+
+p{
+	color:#fff;
+	text-align:justify;
+		
+}
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0px;
+	clear:both;
+	visibility:hidden;
+	}	
+/* FF, Safari, Opera—p */
+
+.clearfix {
+	display:inline-block;
+	}
+/* IE7, MacIE5—p */
+
+/* The Following Hidden From MacIE \*/
+	* html .clearfix { height:1%; }
+	.clearfix { display:block; height:inherit; }
+
+.clear { 
+	clear: both; 
+	height: 0;
+}
+#sectionWrapper{
+	width:960px;
+	height:auto;
+	position:relative;
+	margin:0 auto;
+}
+
+#sectionWrapper #sectionHeader{
+	width:960px;
+	height:132px;
+	position:relative;
+	margin:0 auto;
+}
+
+#sectionWrapper #sectionHeader #sectionLogo{
+	height:200px;
+	width:200px;
+	left:390px;
+	top:15px;
+	position:absolute;
+}
+#sectionWrapper #sectionHeader #sectionLogin{
+	width:495px;
+	height:35px;
+	position:absolute;
+	right:0px;
+	top:30px;
+}
+#sectionWrapper #sectionHeader #sectionLogin form input{
+	width:120px;
+	height:25px;
+	border:none;
+	padding:5px 5px 5px 32px;
+	position:absolute;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:12px;
+	color:#fff;
+	border:none;
+	top:0px;
+}
+#sectionWrapper #sectionHeader #sectionLogin form input.username{
+	left:0px;
+	background:url(../btn/username.html) no-repeat;
+}
+#sectionWrapper #sectionHeader #sectionLogin form input.password{
+	left:158px;
+	background:url(../btn/password.html) no-repeat;
+}
+#sectionWrapper #sectionHeader #sectionLogin form input.code{
+	left:0px;
+	width:110px;
+	top:40px;
+}
+#sectionWrapper #sectionHeader #sectionLogin form img.code{
+	position: absolute;
+	left:120px;
+	width:60px;
+	top:40px;
+}
+
+#sectionWrapper #sectionHeader #sectionLogin form input[type="button"]{	
+	padding:0;
+	border:none;
+	cursor:pointer;
+	visibility: visible;
+	position:absolute;
+}
+#sectionWrapper #sectionHeader #sectionLogin form input#btn-login{
+	right:90px;
+	background:url(../btn/login.html) no-repeat;
+	width:89px;
+	height:35px;
+	cursor:pointer;
+	top:0px;
+}
+#sectionWrapper #sectionHeader #sectionLogin form input#btn-register{
+	background:url(../btn/daftar.html) no-repeat;
+	cursor: pointer;
+    width:89px;
+	height:35px;
+    right: 0px;
+    top: 0px;
+}
+#sectionWrapper #sectionHeader #sectionLogin form img{
+	position:absolute;
+}
+#sectionWrapper #sectionHeader #sectionLogin form img.imgCode{
+	right:210px;
+	top:10px;
+}
+#sectionWrapper #sectionHeader #sectionLogin form img.register{
+	left:272px;
+	top:67px;
+}
+
+#sectionWrapper #sectionHeader #sectionMenu{
+	width:425px;
+	height:48px;
+	position:absolute;
+	top:128px;
+	left:320px;
+}
+
+#sectionWrapper #sectionHeader #sectionMenu ul{
+	list-style:none;
+}
+#sectionWrapper #sectionHeader #sectionMenu ul li{
+	float:left;
+	height:33px;
+	margin-right:5px;
+}
+#sectionWrapper #sectionHeader .livechat{
+	position:absolute;
+	right:0px;
+	top:78px;
+}
+#sectionWrapper #sectionInfo{
+	height:29px;
+	width:755px;
+	padding:10px 125px 10px 80px;
+	background:url(../img/info.png) no-repeat;
+	margin:10px auto 0 auto;
+}
+#sectionWrapper #sectionInfo marquee{
+	color:#ffffff;
+	font-size:20px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
+}
+
+#sectionWrapper #sectionContain-1{
+	width:960px;
+	height:auto;
+	margin:0 auto;
+	position:relative;
+}
+
+#sectionWrapper #sectionContain-1 #slider{
+	width:960px;
+	height:400px;
+}
+
+#sectionWrapper #sectionContain-1 #sectionContact img{
+	float:left;
+}
+#sectionWrapper #sectionContain-1 #sectionBankOnline{
+	text-align:center;
+	margin-top:87px;
+}
+
+#sectionWrapper #sectionContain-2{
+	width:960px;
+	height:auto;
+	position:relative;
+	margin: 0 auto;
+	text-align:center;
+}
+#sectionWrapper #sectionContain-2 .left-content{
+	float:left;
+	width:615px;
+}
+#sectionWrapper #sectionContain-2 .left-content .contact{
+	width:615px;
+	height:53px;
+	margin-top:18px;
+}
+#sectionWrapper #sectionContain-2 .left-content .contact img{
+	float:left;
+}
+#contact{
+	width:620px;
+	height:53px;
+	text-align:right;
+	margin-left:153px;
+}
+#sectionWrapper #sectionContain-2 .left-content .transection{
+	margin-top:5px;
+	width:156%;
+	height:185px;
+	background: url(../img/panduan.jpg) no-repeat, rgba(0, 0, 0, 0.4) no-repeat;
+	background-position: left center, center;
+}
+#sectionWrapper #sectionContain-2 .left-content .transection2{
+	margin-top:0px;
+	width:960px;
+	height:100px;
+	background: url(../img/jackpot.png) no-repeat;
+	position:relative;
+}
+#sectionWrapper #sectionContain-2 .left-content .transection .list-transection{
+	position:absolute;
+	width:235px;
+	height:115px;
+	top:50px;
+}
+#sectionWrapper #sectionContain-2 .left-content .transection .withdraw{
+	left:30px;
+}
+#sectionWrapper #sectionContain-2 .left-content .transection .deposit{
+	left:340px;
+}
+#sectionWrapper #sectionContain-2 .left-content .transection .list-transection table{
+	border:0;
+	border-collapse:collapse;
+}
+#sectionWrapper #sectionContain-2 .left-content .transection .list-transection table td{
+	border:0;
+	border-collapse:collapse;
+	font-size:16px;
+	color:#fff;
+	width:50%;
+	height:23px;
+}
+#sectionWrapper #sectionContain-2 #sectionJackpot{
+	width:336px;
+	height:210px;
+	background:url() no-repeat;
+	position:relative;
+	float:right;
+}
+#sectionWrapper #sectionContain-2 #sectionJackpot .jackpot{
+	position:absolute;
+	font-size:38px;
+	font-weight:bold;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	color:#fff600;
+	text-align:center;
+	line-height:34px;
+	left:94px;
+	width:220px;
+}
+#sectionWrapper #sectionContain-2 #sectionJackpot .poker{
+	top:130px;
+}
+#sectionWrapper #sectionContain-2 #sectionJackpot .domino{
+	top:220px;
+}
+#sectionWrapper #sectionContain-2 #sectionJackpot .capsa{
+	top:315px;
+}
+#sectionWrapper #sectionContain-2 #secctionTransaction{
+	width:496px;
+	height:213px;
+	float:right;
+	position:relative;
+	background:url(../bg/transaction.html) no-repeat;
+}
+#sectionWrapper #sectionContain-2 #secctionTransaction .transaction{
+	width:220px;
+	height:90px;
+	position:absolute;
+}
+#sectionWrapper #sectionContain-2 #secctionTransaction .deposit{
+	right:25px;
+	top:5px;
+}
+#sectionWrapper #sectionContain-2 #secctionTransaction .withdraw{
+	right:25px;
+	top:115px;
+}
+#sectionWrapper #sectionContain-2 #secctionTransaction table{
+	border:0;
+	border-collapse:collapse;
+}
+#sectionWrapper #sectionContain-2 #secctionTransaction table td{
+	width:100px;
+	vertical-align:middle;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#00b4ff;
+	font-weight:bold;
+	font-size:14px;
+	height:22px;	
+}
+#sectionWrapper #sectionContain-2 #secctionTransaction table td.td01{
+	padding-left:10px;
+	text-align:left;
+}
+#sectionWrapper #sectionContain-2 #secctionTransaction table td.td02{
+	padding-right:10px;
+	text-align:right;
+}
+#sectionWrapper  #footer{
+	width:960px;
+	margin:10px auto 0 auto;
+	height:auto;
+	color:#fff;
+	text-align:center;
+}
+#sectionWrapper  #footer ul{
+	list-style:none;
+	text-align:center;
+	padding:10px 0;
+}
+#sectionWrapper  #footer ul li{
+	display: inline;
+	padding:0 5px;
+	border-right:2px solid #fff;
+	font-size:16px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#sectionWrapper  #footer ul li:last-child{
+	border-right:0px;
+}
+#sectionWrapper  #footer ul li a{
+	display:inline-block;
+	text-decoration:none;
+	color:#fff;
+}
+#sectionWrapper  #footer p{
+	text-align:center;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-bottom:10px;
+}
+
+
+#sectionLivechat{
+	position:fixed;
+	right:0px;
+	bottom:0px;
+	width:355px;
+	height:455px;
+	z-index:999;
+}
+#sectionContact{
+	width:43px;
+	height:292px;
+	position:fixed;
+	top:50%;
+	margin-top:-146px;
+	left:20px;
+}
+.jackpot1 {width:600px; height:110px; overflow:hidden;}
+.totaljackpot3 {width:150px; height:auto; float:right; float:left; padding:30px 0 0 50px;text-align:center; color:#e1f000; font-size:34px}
+
+.myButton {
+	background:linear-gradient(to bottom, #0027ff  5%, #2196F3  100%);
+	background-color:#054a09;
+	border-radius:4px;
+	border:1px solid #000;
+	display:inline-block;
+	cursor:pointer;
+	color:#FFF;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:5px 10px;
+	text-decoration:none;
+	width: 150px;
+	}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f00 5%, #810000 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#175713', endColorstr='#054a09',GradientType=0);
+	background-color:#175713;
+	color:#fff;
+	text-decoration:underline;
+	}
+.myButton:active {position:relative;top:1px;}
+/* jackpot */
+.jackpot {
+width:960px;
+height:87px;
+margin:0 auto;
+margin-top:5px;
+margin-bottom:10px;
+background:url(../images/jackpot.html) no-repeat;
+position:relative;
+}
+
+.totaljackpot, .totaljackpot2, .totaljackpot3 {
+position:absolute;
+color:#fff;
+top:42px;
+font-size:30px;
+text-align:center;
+font-weight:normal;
+}
+
+.totaljackpot {
+right:665px;
+}
+
+.totaljackpot2 {
+right:347px;
+}
+
+.totaljackpot3 {
+right:27px;
+}
+
+@keyframes glow {
+    from { }
+
+    to {
+        box-shadow: 1px 1px 55px 0px rgb(255, 4, 4);
+        transform: scaleX(1) scaleY(1);
+    }
+}
+
+.animate {
+    -moz-animation: glow 1s infinite ease-in-out alternate;
+    -ms-animation: glow 1s infinite ease-in-out alternate;
+    -o-animation: glow 1s infinite ease-in-out alternate;
+    -webkit-animation: glow 1s infinite ease-in-out alternate;
+    animation: glow 1s infinite cubic-bezier alternate;
+}
+
+@keyframes autopopup {
+    from {opacity: 0;margin-top:-200px;}
+    to {opacity: 1;}
+}
+#close {
+    background-color: rgba(64, 68, 65, 0.5);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    animation:autopopup 3.5s;
+}
+#close:target {
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    transition:all 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media (min-width: 768px){
+    .container-popup {
+        width:50%;
+    }
+}
+@media (max-width: 767px){
+    .container-popup {
+        width:50%;
+    }
+}
+.container-popup {
+    position: relative;
+    margin: 5% auto;
+    padding: 4px 3px;
+    background-color: #0C0000;
+    color: #fff;
+    border-radius: 8px;
+}
+.container-popup img {
+    width: 100%
+}
+.close {
+    position: absolute;
+    top:3px;
+    right:3px;
+    background-color: #580000;
+    padding:7px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 1;
+    color:#fff;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.container-popup a{
+    text-decoration:none;
+    
+}
+.content-popup{
+    margin:5px 10px;
+    padding:5px 0px;
+}
